@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>VCS prueba de bootcamp</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+   
+    <script>
+
+    var primos = [];
+    var n;
+    var numero;
+    
+    function numerosPrimos(numero)
+    {
+
+        for ( var i=2; i < n; i++) {
+
+            if(n % i === 0){
+            return false;
+                               }
+            if (n === 1) {
+            return false;
+            }
+            primos.push (numero);
+            return;
+              }
+            
+    }
+    function listadoPrimos (n){
+        var p = 2;
+        do 
+        {
+             numerosPrimos(p); p++;
+        }
+        while (numerosPrimos.lenght < n + 1);
+    }
+
+    listadoPrimos(100);
+       
+    alert(primos);
+
+    </script>
+    </body>
+</html>
